@@ -19,7 +19,7 @@ class InfovideoSeeder extends Seeder
             'date' => '2023/09/10',
             'new_name' => 'rien-3',
             'name' => '2565622_1225.mp4',
-            'weight' => '101 Mo',
+            'weight' => 101,
             'url' => 'www.salutc/est/pasfredo.com',
         ]);
         DB::table('infosvideos')->insert([
@@ -28,7 +28,7 @@ class InfovideoSeeder extends Seeder
             'date' => '2023/09/10',
             'new_name' => 'rien-2',
             'name' => '2568922_1225.mp4',
-            'weight' => '100 Mo',
+            'weight' => 100,
             'url' => 'www.salutc/est/fredo.com',
         ]);
         DB::table('infosvideos')->insert([
@@ -37,7 +37,7 @@ class InfovideoSeeder extends Seeder
             'date' => '2023/09/10',
             'new_name' => 'rien-1',
             'name' => '2564422_1225.mp4',
-            'weight' => '107 Mo',
+            'weight' => 107,
             'url' => 'www.salutc/est/patoche.com',
         ]);
     }

@@ -13,6 +13,11 @@ class Infovideo extends Model
 
     protected $fillable = [
         'name',
+        'new_name',
+        'date',
         'description',
+        'user_name',
+        'url',
+        'weight',
     ];
 }

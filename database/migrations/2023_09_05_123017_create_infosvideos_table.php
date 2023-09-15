@@ -15,12 +15,13 @@ return new class extends Migration
         Schema::create('infosvideos', function (Blueprint $table){
             $table->id();
             $table->string('name');
-            $table->string('new_name')->nullable();
-            $table->date('date')->nullable();
-            $table->string('description')->nullable();
-            $table->string('user_name')->nullable();
-            $table->string('url');
-            $table->string('weight');
+            $table->string('new_name');
+            $table->date('date')->default(now());
+            $table->text('description');
+            $table->string('user_name')->default('Amine-l4dmin');
+            $table->string('url')->default('C:\Users\Amine\Documents\Url\Fake-Url');;
+            $table->decimal('weight')->default(127);
+            $table->timestamps(); 
         });
     }
 

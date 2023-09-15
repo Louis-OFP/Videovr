@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 use App\Models\Infovideo; 
+use Illuminate\Support\Facades\DB;
 
 class FormController extends Controller
 {
@@ -16,8 +17,10 @@ class FormController extends Controller
     public function destroy(Infovideo $infovideo)
     {
         $infovideo->delete();
-        return redirect()->back(); 
+        return redirect()->back();
+        
     }
+
 
 
 }

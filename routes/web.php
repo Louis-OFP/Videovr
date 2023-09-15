@@ -1,9 +1,11 @@
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\InfovideoController;
+
 
 
 
@@ -27,8 +29,9 @@ Route::get('/', function () {
     ]);
 });
 
+Route::resource('infovideo', InfovideoController::class);
 Route::resource('form', FormController::class);
-
+Route::get('/edit/{infovideo}', 'InfovideoController@edit')->name('infovideo.edit');
 
 
 Route::middleware([
